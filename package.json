@@ -1,0 +1,22 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "description": "An alarm clock / timer which will beep after a specified amount of time has passed. The user can specify an unlimited number of alarms using command line arguments",
+  "main": "timer1.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgislason/timer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kgislason/timer/issues"
+  },
+  "homepage": "https://github.com/kgislason/timer#readme"
+}
