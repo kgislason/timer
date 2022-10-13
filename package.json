@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/kgislason/timer/issues"
   },
-  "homepage": "https://github.com/kgislason/timer#readme"
+  "homepage": "https://github.com/kgislason/timer#readme",
+  "dependencies": {
+    "mocha": "^9.2.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6"
+  }
 }

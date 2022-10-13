@@ -1,15 +1,13 @@
 /**
  * timerScheduleBeeps()
- * 
+ *
  * Description: takes the sorted and filtered arguemtns (numbers in seconds) and scheduled them to sound a beep at each time in seconds from when the program is run. A message is also logged to the console.
  */
-const sortTimes = require('./sortTimes');
 
 // schedule the beeps to run at the specified times
-const timerScheduleBeeps = function() {
-  let bt = sortTimes();
+const timerScheduleBeeps = function(array) {
   // Loop through our times args
-  for (let t of bt) {
+  for (let t of array) {
     let tSec = t * 1000;
     setTimeout(() => {
       let second = "seconds";
