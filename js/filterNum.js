@@ -9,19 +9,15 @@
 
 const filterArr = function(array) {
   let output = [];
-  if (array.length === 0) {
-    throw Error("You must enter at least one argument - a number in seconds. Multiple arguments should be separated by a space, i.e. 1 2 3");
-  }
+  if (array.length !== 0) {
+    for (let time of array) {
+      let negNum = time < 0;
+      let notNum = isNaN(time);
+      let tooBig = time > 600;
 
-  for (let time of array) {
-    if (time < 0) {
-      throw Error("Numbers must be equal or greater than 0 (no negative numbers).");
-    } else if (isNaN(time)) {
-      throw Error("Type Error: You must enter only numbers (in seconds).");
-    } else if (time > 600) {
-      throw Error("Please...we don't want to be here all day. Only numbers less than 600 (600 seconds === 10 minutes!!!).");
-    } else {
-      output.push(Number(time));
+      if (!negNum && !notNum && !tooBig) {
+        output.push(Number(time));
+      }
     }
   }
   return output;
