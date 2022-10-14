@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const args = require('../js/processArgv');
+const args = require('../js/secondsArgs');
 
 describe("#processArgv", () => {
   it('Should return empty array until arguments are entered into the console', () => {
