@@ -8,13 +8,28 @@
  */
 
 const filterArr = function(array) {
+
+  // Create the output array
   let output = [];
+
+  // Check if array is empty
   if (array.length !== 0) {
+
+    // Loop through the array
     for (let time of array) {
+
+      // identify cases we don't want to include in our timer
+
+      // No negative numbers
       let negNum = time < 0;
+
+      // No strings, other data types
       let notNum = isNaN(time);
+
+      // No huge numbers
       let tooBig = time > 600;
 
+      // push only valid numbers to our new array
       if (!negNum && !notNum && !tooBig) {
         output.push(Number(time));
       }

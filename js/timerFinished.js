@@ -5,7 +5,12 @@
  */
 
 const timerFinished = function(array) {
+
+  // Calculate when the timer should finish based on last second argument
+  // Add one second and convert to milliseconds:
   let endTime = (Number(array[array.length - 1]) + 1) * 1000;
+
+  // Schedule the messge to run 1 second after the last beep sounds:
   setTimeout(() => {
     console.log('Timer finished!');
   }, endTime);

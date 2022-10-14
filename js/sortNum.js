@@ -7,6 +7,8 @@
  */
 
 const sortNum = function(array) {
+
+  // sort our numbers lowest to highest
   let output = array.sort((a, b) => a - b);
   return output;
 };
