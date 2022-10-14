@@ -9,6 +9,8 @@ const sortNum = require("./sortNum");
 const filterNum = require("./filterNum");
 const args = require("./processArgv");
 
-const secondsArgs = sortNum(filterNum(stringToNum(args)));
+const secondsArgs = function() {
+  return sortNum(filterNum(stringToNum(args())));
+};
 
 module.exports = secondsArgs;

@@ -1,5 +1,5 @@
 /**
- * filterArr();
+ * filterNum();
  *
  * Description: Takes in an array of arguments from the console (number representing seconds) and filters out any bad data, i.e. empty argument, negative values, strings and returns a new array with only valid numbers
  *
@@ -7,7 +7,7 @@
  * @returns {array} returns a new array that has been cleaned of data that is not valid
  */
 
-const filterArr = function(array) {
+const filterNum = function(array) {
 
   // Create the output array
   let output = [];
@@ -38,4 +38,4 @@ const filterArr = function(array) {
   return output;
 };
 
-module.exports = filterArr;
+module.exports = filterNum;

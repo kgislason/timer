@@ -9,4 +9,4 @@ const secondsArgs = require("./js/secondsArgs");
 const timerStart = require("./js/timerStart");
 
 // Initiate the timer by calling our timerStart() function:
-timerStart(secondsArgs);
+timerStart(secondsArgs());

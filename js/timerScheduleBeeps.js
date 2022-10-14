@@ -1,7 +1,7 @@
 /**
  * timerScheduleBeeps()
  *
- * Description: takes the sorted and filtered arguemtns (numbers in seconds) and scheduled them to sound a beep at each time in seconds from when the program is run. A message is also logged to the console.
+ * Description: takes the sorted and filtered arguments (numbers in seconds) and scheduled them to sound a beep at each time in seconds from when the program is run. A message is also logged to the console.
  */
 
 // schedule the beeps to run at the specified times
