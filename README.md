@@ -36,7 +36,7 @@ The following functions are currently implemented:
 * `filterNum()`: Takes in an array of arguments from the console (number representing seconds) and filters out any bad data, i.e. empty argument, negative values, strings and returns a new array with only valid numbers.
 * `stringToNum()`: Converts the arguments array from the console into numbers from strings and returns a new array of numbers.
 * `sortNum()`: takes the args array with user defined arguments and sorts them from smallest to largest.
-* `secondsArgs()`: Applies functions `filterNum()`, `stringToNum()`, `sortNum()` to `args` variable`. This function is then passed to the `timerStart()` function.
+* `secondsArgs()`: Applies functions `filterNum()`, `stringToNum()`, `sortNum()` to `args` variable. This function is then passed to the `timerStart()` function.
 * `timerScheduleBeeps()`: takes the sorted and filtered arguments (numbers in seconds) and scheduled them to sound a beep at each time in seconds from when the program is run. A message is also logged to the console.
 * `timerRunning()`:  prints dots to the console to indicate that the program is running. Each second a series of dots is printed to the console. The dots increase the longer the program runs.
 * `timerFinished()`:  takes the filtered and sorted arguments (numbers in seconds) and determines the last scheduled beep. Prints a message to the console when the last beep has been sounded.
